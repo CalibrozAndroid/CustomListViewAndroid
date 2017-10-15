@@ -20,14 +20,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void initUI() {
         mContactListView = (ListView) findViewById(R.id.contact_list_view);
-
         ContactAdapter adapter = new ContactAdapter(this,getContacts());
-
-
         mContactListView.setAdapter(adapter);
-
-
-
     }
 
 
@@ -36,16 +30,12 @@ public class MainActivity extends AppCompatActivity {
 
     public ArrayList<ContactModel> getContacts(){
         ArrayList<ContactModel> contactModels = new ArrayList<>();
-
-
-
         ContactModel contactOne = new ContactModel();
 
         contactOne.setName("Muhammed");
         contactOne.setEmail("muhammed@gamil.com");
         contactOne.setPhone("8086461927");
         contactOne.setAddress("Ernakulam");
-
 
         contactModels.add(contactOne);
 
